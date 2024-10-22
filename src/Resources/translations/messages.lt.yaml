@@ -1,0 +1,45 @@
+monsieurbiz_sylius_media_manager:
+    ui:
+        cancel: Atšaukti
+        choose_this_file: Pasirinkite šį failą
+        current_file: Dabartinis failas
+        current_image: Dabartinis vaizdas
+        current_video: Dabartinis vaizdo įrašas
+        choose_file: Pasirinkite failą
+        choose_image: Pasirinkite vaizdą
+        choose_video: Pasirinkite vaizdo įrašą
+        create_folder: Naujas aplankas
+        delete_folder: Ištrinkite šį aplanką
+        rename_folder: Pervardykite šį aplanką
+        delete_file: Ištrinti šį failą
+        create: Sukurti
+        rename: Pervardyti
+        upload_file_in_this_folder: Naujas failas šiame aplanke
+        delete_folder_confirm: Ar tikrai norite ištrinti aplanką `%path%`?
+        delete_file_confirm: Ar tikrai norite ištrinti failą `%path%`?
+        delete_file_confirm_bis: Jei jis bus naudojamas, jis nebebus pasiekiamas, ar tai patvirtinate?
+        rename_folder_confirm: Ar tikrai norite pervardyti aplanką `%path%`?
+        rename_folder_confirm_bis: Jei failai yra šiame aplanke arba poaplankiuose, jie nebebus pasiekiami, ar patvirtinate tai?
+        remove_file: Pašalinti failą
+        remove_image: Pašalinti vaizdą
+        remove_video: Pašalinti vaizdo įrašą
+        remove_confirmation: Ar tikrai norite pašalinti šią vertę? Failas nebus ištrintas iš serverio.
+    error:
+        cannot_create_folder: Nepavyko sukurti aplanko.
+        cannot_delete_folder: Nepavyko ištrinti aplanko.
+        cannot_delete_file: Nepavyko ištrinti failo.
+        cannot_find_input: Formos įvesties nepavyko rasti.
+        cannot_find_type: Nepavyko rasti failo tipo.
+        cannot_upload_file: Nepavyko įkelti failo.
+        cannot_rename_folder: Nepavyko pervardyti aplanko.
+        invalid_type_input: Įvestas netinkamas failo tipas.
+        file_not_found: Failas nerastas.
+        folder_not_readable: Nepavyko nuskaityti aplanko „%folder%“.
+        invalid_mime_type:
+            audio: Pasirinktas failas nėra garso įrašas.
+            image: Pasirinktas failas nėra vaizdas.
+            video: Pasirinktas failas nėra vaizdo įrašas.
+            pdf: Pasirinktas failas nėra PDF.
+            favicon: Pasirinktas failas nėra favicon.
+            file: Pasirinktas failas nėra tinkamas.
+        max_file_size: Failas yra didesnis nei didžiausias leistinas %maxSize%.
