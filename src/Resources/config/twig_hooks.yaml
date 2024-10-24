@@ -1,0 +1,5 @@
+twig_hooks:
+    hooks:
+        'sylius_admin.base#javascripts':
+            media_manager:
+                template: '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/app.html.twig'
