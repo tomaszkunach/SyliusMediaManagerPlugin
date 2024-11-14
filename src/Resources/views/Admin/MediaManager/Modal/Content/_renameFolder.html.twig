@@ -1,5 +1,3 @@
-{% from '@SyliusAdmin/shared/helper/icon.html.twig' import icon %}
-
 {% if path is not empty %}
     <div class="container">
         <div class="item monsieurbiz-sylius-file-manager__item monsieurbiz-sylius-file-manager__item-rename-folder">
@@ -8,7 +6,7 @@
                     style="max-width: 200px;color: white;"
                     onclick=";this.parentNode.querySelector('.monsieurbiz-sylius-file-manager__rename-folder').classList.remove('d-none');this.parentNode.querySelector('.monsieurbiz-sylius-file-manager__rename-folder input').focus();"
             >
-                {{ icon({ icon: 'plus', class: 'icon' }) }} {{ 'monsieurbiz_sylius_media_manager.ui.rename_folder' | trans }}
+                {{ ux_icon('tabler:folder', { 'class': 'icon' }) }} {{ 'monsieurbiz_sylius_media_manager.ui.rename_folder' | trans }}
             </button>
 
             {# Form to rename folder #}

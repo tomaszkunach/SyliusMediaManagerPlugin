@@ -1,10 +1,8 @@
-{% from '@SyliusAdmin/shared/helper/icon.html.twig' import icon %}
-
 <div class="conatiner">
     {% for file in files %}
-        {% set fileIcon = file.isDir ? 'history' : file.isImage ? 'success' : file.isVideo ? 'video' : file.isPdf ? 'pencil' : file.isFavicon ? 'success' : file.isAudio ? 'music' : file.isFile ? 'cube' : 'question' %}
+        {% set fileIcon = file.isDir ? 'tabler:folder' : file.isImage ? 'tabler:image-in-picture' : file.isVideo ? 'tabler:video' : file.isPdf ? 'tabler:file-type-pdf' : file.isFavicon ? 'tabler:favicon' : file.isAudio ? 'tabler:music' : file.isFile ? 'tabler:file' : 'tabler:question-mark' %}
         <div class="d-flex flex-row">
-            {{ icon({ icon: fileIcon, class: 'icon' }) }}
+            {{ ux_icon(fileIcon, { 'class': 'icon' }) }}
             <div class="monsieurbiz-sylius-file-manager__item d-flex flex-grow-1 flex-fill"
             {%- if file.isDir -%}onclick="monsieurbizSyliusMediaManagerDisplayPath('{{ inputName | escape('js') }}', '{{ folder | escape('js')}}', '{{ file.path | escape('js')}}');"{%- endif -%}
             {%- if file.isFile -%}onclick="monsieurbizSyliusMediaManagerConfirmFile('{{ inputName | escape('js') }}', '{{ folder | escape('js')}}', '{{ file.path | escape('js')}}');"{%- endif -%}
