@@ -1,16 +1,20 @@
-<div class="ui modal monsieurbiz-sylius-file-manager__modal">
-    <div class="header">
-        {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_header.html.twig' %}
-    </div>
+<div class="modal monsieurbiz-sylius-file-manager__modal" id="media-manager-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_header.html.twig' %}
+            </div>
 
-    <div class="content">
-        {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_content.html.twig' %}
-    </div>
+            <div class="modal-body">
+                {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_content.html.twig' %}
+                <div class="ui dimmer inverted monsieurbiz-sylius-file-manager__loader">
+                    <div class="ui loader"></div>
+                </div>
+            </div>
 
-    <div class="actions">
-        {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_actions.html.twig' %}
-    </div>
-    <div class="ui dimmer inverted monsieurbiz-sylius-file-manager__loader">
-        <div class="ui loader"></div>
+            <div class="modal-footer">
+                {% include '@MonsieurBizSyliusMediaManagerPlugin/Admin/MediaManager/Modal/_actions.html.twig' %}
+            </div>
+        </div>
     </div>
 </div>
